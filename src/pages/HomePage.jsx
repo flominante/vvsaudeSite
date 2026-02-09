@@ -11,6 +11,21 @@ const specialties = [
 
 const partners = ['MedLab Diagnostics', 'Saúde Prime Insurance', 'City Hospital', 'Wellness+'];
 
+const gallery = [
+  {
+    src: 'https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=80',
+    alt: 'Clinic reception area'
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=80',
+    alt: 'Medical consultation room'
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=80',
+    alt: 'Healthcare professional with patient'
+  }
+];
+
 function HomePage() {
   return (
     <>
@@ -34,6 +49,20 @@ function HomePage() {
               <li>Digital patient records and secure communication</li>
               <li>Multidisciplinary team with recognized specialists</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section media-strip">
+        <div className="container">
+          <p className="eyebrow">Clinic gallery</p>
+          <h2>Spaces designed for comfort and confidence.</h2>
+          <div className="image-grid">
+            {gallery.map((image) => (
+              <figure key={image.alt} className="image-card">
+                <img src={image.src} alt={image.alt} loading="lazy" />
+              </figure>
+            ))}
           </div>
         </div>
       </section>

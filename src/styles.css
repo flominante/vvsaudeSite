@@ -192,6 +192,60 @@ button:hover {
   gap: 1rem;
 }
 
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.image-grid-vertical {
+  grid-template-columns: 1fr;
+}
+
+.media-strip {
+  padding-top: 0;
+}
+
+.image-card {
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(20, 36, 70, 0.1);
+  min-height: 220px;
+}
+
+.image-card img,
+.media-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.media-card {
+  overflow: hidden;
+  padding: 0;
+}
+
+.media-card h3,
+.media-card p,
+.media-card .news-date {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.media-card h3 {
+  margin-top: 0.9rem;
+}
+
+.media-card p:last-child {
+  margin-bottom: 1.1rem;
+}
+
+.news-media-item img {
+  height: 180px;
+}
+
 .feature-card p,
 .team-card p,
 .news-item p {
@@ -285,7 +339,8 @@ textarea {
 @media (max-width: 900px) {
   .grid-2,
   .card-grid,
-  .footer-grid {
+  .footer-grid,
+  .image-grid {
     grid-template-columns: 1fr;
   }
 
