@@ -1,6 +1,6 @@
 # VV Saúde Clinic Website (React)
 
-Professional and modern 6-page clinic website built with React.
+Professional and modern multi-page clinic website built with React, including an interactive appointments calendar.
 
 ## Pages included
 
@@ -13,6 +13,7 @@ Professional and modern 6-page clinic website built with React.
 - Specialties page
 - News page
 - Contact page
+- Appointments calendar page (interactive day selection + request form)
 
 ## Run locally
 

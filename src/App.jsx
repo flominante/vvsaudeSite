@@ -5,6 +5,7 @@ import TeamPage from './pages/TeamPage';
 import SpecialtiesPage from './pages/SpecialtiesPage';
 import NewsPage from './pages/NewsPage';
 import ContactPage from './pages/ContactPage';
+import CalendarPage from './pages/CalendarPage';
 
 const navItems = [
   { to: '/', label: 'Home' },
@@ -12,7 +13,8 @@ const navItems = [
   { to: '/team', label: 'Team' },
   { to: '/specialties', label: 'Specialties' },
   { to: '/news', label: 'News' },
-  { to: '/contact', label: 'Contact' }
+  { to: '/contact', label: 'Contact' },
+  { to: '/calendar', label: 'Calendar' }
 ];
 
 function App() {
@@ -50,6 +52,7 @@ function App() {
           <Route path="/specialties" element={<SpecialtiesPage />} />
           <Route path="/news" element={<NewsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/calendar" element={<CalendarPage />} />
         </Routes>
       </main>
 
